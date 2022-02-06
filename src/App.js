@@ -1,13 +1,16 @@
 import React from 'react';
 // import Topbar from 'Topbar';
-
-import Header from './Header';
-
+import { Layout, Menu, Breadcrumb } from 'antd';
+import TopBars from './TopBars ';
+const { Header, Content, Footer } = Layout;
 function App() {
   return (
     <div>
-      <Header />
-      {/* </Topbar> */}
+      <Layout className="mainLayout">
+        <Header>
+          <TopBars />
+        </Header>
+      </Layout>
     </div>
   );
 }
