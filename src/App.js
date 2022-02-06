@@ -4,6 +4,8 @@ import { Layout, Menu, Breadcrumb } from 'antd';
 import TopBars from './TopBars ';
 import HeroSection from './HeroSection ';
 
+import About from './About ';
+
 const { Header, Content, Footer } = Layout;
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
 
         <Content>
           <HeroSection />
+          <About />
         </Content>
       </Layout>
     </div>
