@@ -1,13 +1,15 @@
 import React from 'react';
+// import Topbar from 'Topbar';
 
+import Header from 'Header';
 
-import { DatePicker } from 'antd';
-
-export default function App() {
+function App() {
   return (
     <div>
-      <DatePicker />
-      <p>Start editing to see some magic happen :)</p>
+      <Header />
+      {/* </Topbar> */}
     </div>
   );
 }
+
+export default App;
