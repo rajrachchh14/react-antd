@@ -2,10 +2,28 @@ import React from 'react';
 import { Carousel } from 'antd';
 
 function HeroSection() {
+  const item = [
+    {
+      key: '1',
+      title: 'one title',
+      content: 'one content',
+    },
+    {
+      key: '2',
+      title: 'two title',
+      content: 'two content',
+    },
+    {
+      key: '3',
+      title: 'three title',
+      content: 'three content',
+    },
+  ];
+
   const contentStyle = {
-    height: '160px',
+    // height: '160px',
     color: '#fff',
-    lineHeight: '160px',
+    lineHeight: '660px',
     textAlign: 'center',
     background: '#364d79',
   };
@@ -13,18 +31,16 @@ function HeroSection() {
   return (
     <div>
       <Carousel>
-        <div>
-          <h3 style={contentStyle}>1</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>2</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>4</h3>
-        </div>
+        {item.map((data, index) => {
+          return (
+            <div>
+              {console.log(data.title)}
+              <h3 style={contentStyle} key={index}>
+                {data.title}
+              </h3>
+            </div>
+          );
+        })}
       </Carousel>
     </div>
   );
