@@ -1,3 +1,5 @@
-h1, p {
-  font-family: Lato;
+body {
+  font-family: 'Sofia', sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ababab;
 }
