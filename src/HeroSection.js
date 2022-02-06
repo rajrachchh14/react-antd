@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel } from 'antd';
+import { Carousel, Button } from 'antd';
 
 function HeroSection() {
   const item = [
@@ -23,26 +23,26 @@ function HeroSection() {
   const contentStyle = {
     // height: '160px',
     color: '#fff',
-    lineHeight: '660px',
+    lineHeight: '640px',
     textAlign: 'center',
     background: '#364d79',
   };
 
   return (
-    <div>
+    <>
       <Carousel>
         {item.map((data, index) => {
           return (
-            <div>
-              {console.log(data.title)}
-              <h3 style={contentStyle} key={index}>
-                {data.title}
-              </h3>
+            <div className="container-fluid">
+              <div className="content">
+                <p style={contentStyle}> {data.title}</p>
+              </div>
+              {/* <Button type="danger">Primary Button</Button> */}
             </div>
           );
         })}
       </Carousel>
-    </div>
+    </>
   );
 }
 
