@@ -10,6 +10,8 @@ function App() {
         <Header>
           <TopBars />
         </Header>
+
+        <Content>contaant</Content>
       </Layout>
     </div>
   );
